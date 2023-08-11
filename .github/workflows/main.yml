@@ -23,7 +23,11 @@ jobs:
           context: ./conversao-temperatura-2-main
           file: ./conversao-temperatura-2-main/src/Dockerfile
           push: true
-          tags: romanostd/dev-ops-first-steps:v1
+          tags: |
+            romanostd/dev-ops-first-steps:v${{ github.run_number }}
+             romanostd/dev-ops-first-steps:v1
+          
+        
 
   CD:
     runs-on: ubuntu-latest
