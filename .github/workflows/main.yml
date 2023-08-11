@@ -20,8 +20,8 @@ jobs:
       - name: Docker build 
         uses: docker/build-push-action@v4.1.1
         with: 
-          context: ./src
-          file: ./src/Dockerfile
+          context: ./conversao-temperatura-2-main
+          file: ./conversao-temperatura-2-main/Dockerfile
           push: true
           tags: |
             romanostd/dev-ops-first-steps:v1
