@@ -21,7 +21,7 @@ jobs:
         uses: docker/build-push-action@v4.1.1
         with: 
           context: ./conversao-temperatura-2-main
-          file: ./src/Dockerfile
+          file: ./conversao-temperatura-2-main/src/Dockerfile
           push: true
           tags: |
             romanostd/dev-ops-first-steps:v1
