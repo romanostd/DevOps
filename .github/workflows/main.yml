@@ -24,8 +24,7 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            fabricioveronez/conversao-temperatura:v${{ github.run_number }}
-            fabricioveronez/conversao-temperatura:latest
+            romanostd/dev-ops-first-steps:v1
 
   CD:
     runs-on: ubuntu-latest
