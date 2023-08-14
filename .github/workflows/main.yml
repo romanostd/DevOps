@@ -20,7 +20,7 @@ jobs:
       - name: Docker build 
         uses: docker/build-push-action@v4.1.1
         with: 
-          context: ./conversao-temperatura-2-main
+          context: ./conversao-temperatura-2-main/src
           file: ./conversao-temperatura-2-main/src/Dockerfile
           push: true
           tags: |
